@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico+" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Urbanist:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Rampart+One&family=Urbanist:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cfa42a299d.js" crossorigin="anonymous"></script>
+    <title>Ram Lal College</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> <img src="Images/logo7.png" alt="LOGO"></a>
+            <div class="menu" id="navLinks">
+                <i class="far fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">OUR ALUMNI</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text">
+            <h1>Degree of excellence</h1>
+            <p>RLCOE(Ram Lal College Of Engineering) was founded by Dr. Ram Lal in 1973.
+                <br> The primary aim of opening this college is to produce skillful engineers to serve the nation.
+            <div class="main-btn">
+                <a href="admission.html">Admission Procedure</a>
+            </div>
+        </div>
+        </p>
+    </header>
+
+    <!--   This is for courses  -->
+    <div class="courses">
+        <h2>Courses which we offer</h2>
+        <p id="h2_cor">Ram Lal College of engineering(RLCOE) is a well known college for the courses which it offer.</p>
+        <div class="row">
+            <div class="col">
+                <h3>Bachelor of Technology (BTech)</h3>
+                <p>Bachelor of Technology (BTech) is a professional undergraduate engineering degree programme awarded
+                    to candidates after the completion of four years of study in the field.</p>
+            </div>
+            <div class="col">
+                <h3>Master of Technology (MTech)</h3>
+                <p>Master of Technology (MTech) is a professional engineering degree programme awarded to candidates
+                    which has done their BTech in any field.This course is of two year.</p>
+            </div>
+            <div class="col">
+                <h3>Integrated Dual Degree(IDD)</h3>
+                <p>This course is of five year which includes both BTech and MTech.This can be in any feild and the best
+                    part is that it reduces the time of graduation.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Campus -->
+    <div class="campus">
+        <h2>Our Global Campus</h2>
+        <p>Campus is full of greenery which provide a natural environment for studies.</p>
+        <div class="rowcampus">
+            <div class="colcampus"><img src="Images/campus1.jpg" alt="Campus"></div>
+            <div class="colcampus"><img src="Images/campus2.jpeg" alt="Campus"></div>
+            <div class="colcampus"><img src="Images/campus3.jpg" alt="Campus"></div>
+        </div>
+    </div>
+
+    <!-- Playing facilities -->
+    <div class="play">
+        <h2>Playing Facilites</h2>
+        <p>Our campus has both indoor and outdoor game</p>
+        <div class="play_img"></div>
+    </div>
+
+    <!-- Other facilities -->
+    <div class="otherf">
+        <h2>Other facilities</h2>
+        <p>Our college provide many facilities which helps student to stay motivated.</p>
+        <div class="rowf">
+            <div class="colf">
+                <img src="Images/hostels.jpg" alt=""><h4>HOSTELS</h4>
+            </div>
+            <div class="colf">
+                <img src="Images/lib.jpg" alt=""><h4>LIBRARY</h4>
+            </div>
+            <div class="colf">
+                <img src="Images/hall.jpg" alt=""><h4>AUDITORIUM HALL</h4>
+            </div>
+        </div>
+    </div>
+    <!-- Last  -->
+    <div class="last">
+        <h2>Contact us to know more</h2>
+        <div class="map">
+            <img src="Images/map.png" alt="">
+            <h4>Location</h4>
+        </div>
+        <div class="icons">
+            <i class="fas fa-envelope-open"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="para">
+            <p>You can contact us at any social media to know more about our college</p>
+        </div>
+    </div>
+    <footer>
+        <p>Copyrights &copy; Reserved by Rahul Singh</p>
+    </footer>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

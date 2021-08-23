@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Start */
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image:url("Images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 5%;
+    justify-content:space-between;
+    align-items: center;
+}
+nav img{
+    width:70px;
+}
+.menu{
+    flex: 1;
+    text-align: right;
+    margin-top: -30px;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 1%;
+    position: relative;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: snow;
+    font-size: 18px;
+    font-family: 'Urbanist', sans-serif;
+}
+.menu ul li::after{
+    content: '';
+    width : 0%;
+    height: 2px;
+    background: rgb(218, 73, 16);
+    display: block;
+    margin-top: 0.5vh;
+    transition: 0.5s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+.text{
+    font-size: large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.text h1{
+    color: #fff;
+    text-align: center;
+    font-size: 10vh;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 1.5px;
+    text-decoration: underline #fff;
+}
+.text p{
+    color: snow;
+    font-size: 3vh;
+    margin: 4px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+}
+.main-btn{
+    margin-top: 25px;
+    cursor: pointer;
+}
+.main-btn a{
+    text-decoration: none;
+    color: rgb(218, 73, 16);
+    border: 2px solid rgb(218, 73, 16);
+    padding: 12px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Rampart One', cursive;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: normal;
+    background-color: transparent;
+}
+.main-btn a:hover{
+    background-color: #fff;
+}
+nav .far, nav .fas{
+    display: none;
+}
+
+
+/* For courses */
+.courses{
+    width: 90vw;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+h2{
+    text-align: center;
+    color: black;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-decoration: underline;
+}
+#h2_cor{
+    margin-top: 4px;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 28px;
+}
+.row{
+    width: 80vw;
+    margin: auto;
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+} 
+ h3{
+    margin: 15px;
+}
+.col{
+    text-align: center;
+    font-size: 22px;
+    flex-basis: 28%;
+    background-color: rgba(222, 184, 135, 0.3);
+    margin: 20px;
+    border-radius: 12px;
+    padding: 16px 24px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Rampart One', cursive;
+    font-family: 'Urbanist', sans-serif;
+    box-sizing: border-box;
+    transition: 0.5s;
+} 
+.col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+/* For campus */
+.campus p{
+    font-size: 28px;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    margin: auto;
+}
+.rowcampus{
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    margin-top: 6%;
+}
+.colcampus{
+  flex-direction: row;
+  margin: auto;
+}
+.colcampus img{
+    height: 70vh;
+    width: 25vw;
+   border-radius: 12px;
+   transition: 0.5s;
+}
+.colcampus img:hover{
+    box-shadow: 0 0 30px 0 rgba(56, 44, 44, 0.6);
+}
+
+
+
+/* For playing facilities */
+.play{
+    margin-top: 10%;
+}
+.play p{
+    margin-top: 4px;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 28px;
+}
+.play_img{
+    width: 80vw;
+    margin: auto;
+    margin-top:5%;
+    background-image: url("Images/sports2.jpg");
+    height: 55vh;
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 10px;
+    animation: slider 20s ease infinite;
+    animation-delay:4s;
+}
+.campus{
+    margin-top: 6%;
+}
+
+@keyframes slider {
+    0%{
+            background-image: url("Images/sports2.jpg");
+    }
+    20%{
+        background-image: url("Images/sports3.jpeg");
+    }
+    40%{
+        background-image: url("Images/sports4.jpg");
+    }
+    60%{
+        background-image: url("Images/sports1.jpeg");
+    }
+    80%{
+        background-image: url("Images/sports1.jpeg");
+    }
+}
+
+/* Other facility */
+.otherf{
+    width: 100vw;
+    margin-top: 10%;
+}
+.otherf p{
+    margin-top: 4px;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 28px;
+    margin-bottom: 6%;
+}
+h4{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 28px;
+}
+.rowf{
+    width: 100vw;
+}
+.colf{
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.rowf .colf img{
+    width: 50vw;
+    height: 70vh;
+    margin: auto;
+    border-radius: 25px;
+    border: 2px solid coral;
+}
+
+/* Last */
+.last h2{
+    margin-top: 10%;
+}
+.map{
+    width: 60vw;
+    height: 50vh;
+    margin: auto;
+    margin-top: 6%;
+}
+.map img{
+    width: 100%;
+    height: 100%;
+    border: 4px solid rgb(235, 252, 3);
+}
+.map h4{
+    text-align: center;
+    margin-top: 10px;
+}
+.icons{
+    width: 100vw;
+    display: flex;
+}
+.icons .fas{
+    color:black;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    padding: 25px;
+    margin-left: 38vw;
+}
+.icons .fab{
+    color:black;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+    padding: 25px;
+}
+.para p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom:100px;
+}
+footer{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+
+
+/* This is media query */
+@media screen and (max-width:900px){
+    .text h1{
+        font-size: 30px;
+    }
+    .text p{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    .menu ul li{
+        display: block;
+    }
+    .menu{
+        background-color: rgb(10, 94, 228);
+        height: 100vh;
+        width: 200px;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        font-size: 25px;
+        padding: 10px;
+        padding-top: 10px;
+        transition: 0.5s;
+        box-sizing: border-box;
+    }
+    .menu ul li{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    nav .far{
+        display: block;
+        font-size:25px;
+        color: #fff;
+        margin-left: 10px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    nav .fas{
+        display: block;
+        font-size:25px;
+        color: #fff;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .main{
+        margin-top: 8px;
+    }
+    .main-btn a{
+        font-size: 4vw;
+        border: 2px solid rgb(218, 73, 16);
+        padding: 5px 8px;
+        margin: 2px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    h2{
+        width: 85vw;
+        margin: auto;
+        font-size: 40px;
+        text-align: center;
+    }
+    #h2_cor , .campus p{
+        width: 90vw;
+        margin: auto;
+        font-size: 19px;
+        text-align: center;
+    }
+    .rowcampus{
+        flex-direction: column;
+    }
+    .colcampus{
+        padding: 20px 0px;
+    }
+    .colcampus img{
+        width: 80vw;
+        margin: auto;
+    }
+    .play p{
+        width: 90vw;
+        margin: auto;
+        font-size: 19px;
+        text-align: center; 
+    }
+    .otherf{
+        width: 100vw;
+    }
+    .otherf p{
+        width: 90%;
+        margin: auto;
+        font-size: 19px;
+        text-align: center;
+    }
+    .rowf{
+        width: 80%;
+        margin: auto;
+    }
+    .rowf .colf img{
+        width: 50vw;
+        height: 45vh;
+        margin: auto;
+        border-radius: 25px;
+        border: 2px solid coral;
+    }
+    .otherf p{
+        margin-bottom: 35px;
+    }
+    .icons{
+        width: 90vw;
+        margin: auto;
+    }
+    .icons .fas{
+        font-size: 7vw;
+        text-align: center;
+        margin-left: 11vw;
+        padding: 6vw;
+    }
+    .icons .fab{
+        font-size: 7vw;
+        padding: 6vw;
+    }
+    .para p{
+        width: 95vw;
+        margin: auto;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 8%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
